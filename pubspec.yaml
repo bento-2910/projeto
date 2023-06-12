@@ -1,0 +1,41 @@
+name: projeto
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=2.19.4 <3.0.0'
+
+dependencies:
+  cloud_firestore: ^4.4.5
+  csc_picker: ^0.2.7
+  firebase_auth: ^4.3.0
+  firebase_core: ^2.8.0
+  flutter:
+    sdk: flutter
+  flutter_cupertino_date_picker_fork: ^1.0.7
+  flutter_form_builder: ^7.8.0
+  get: ^4.6.5
+  google_nav_bar: ^5.0.6
+  lottie: ^2.3.1
+  material_design_icons_flutter: ^6.0.7096
+  table_calendar: ^3.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  #flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/bento_seguros_logo.png
+    - assets/images/bento_seguros_mediador1.jpg
+    - assets/images/bento_seguros_mediador2.jpg
+    - assets/images/bento_seguros_mediador3.jpg
+    - assets/images/bento_seguros_mediador4.jpg
+    - assets/images/bento_seguros_dadosveiculo.png
+    - assets/images/bento_seguros_dadosacidente.png
+    - assets/images/bento_seguros_circunstancias.png
+    - assets/images/bento_seguros_acidente.png
+    - assets/json/bento_seguros_visita_sucesso.json
