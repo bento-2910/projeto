@@ -2,10 +2,10 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+
 import 'package:projeto/colors.dart';
 import 'package:projeto/login/verificacao.dart';
-import 'package:projeto/participa%C3%A7%C3%A3o_amigavel/menu.dart';
-import 'package:projeto/participa%C3%A7%C3%A3o_amigavel/part_inicial.dart';
+import 'package:projeto/participa%C3%A7%C3%A3o_amigavel/form.dart';
 import '../consultas/mediadores.dart';
 import '../login/pagina_login.dart';
 
@@ -32,6 +32,7 @@ class inicio extends StatefulWidget {
 
 class _inicioState extends State<inicio> {
   final User? user = autenticacao().currentUser;
+
   void _terminar_sessao() async {
     bool _isAuthenticated = true;
     showDialog(
@@ -321,7 +322,7 @@ class _inicioState extends State<inicio> {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => menu()),
+                                      builder: (context) => FormDA()),
                                 );
                               },
                               child: Container(

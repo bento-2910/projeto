@@ -11,12 +11,14 @@ dependencies:
   csc_picker: ^0.2.7
   firebase_auth: ^4.3.0
   firebase_core: ^2.8.0
+  firebase_storage: ^11.2.4
   flutter:
     sdk: flutter
   flutter_cupertino_date_picker_fork: ^1.0.7
   flutter_form_builder: ^7.8.0
   get: ^4.6.5
   google_nav_bar: ^5.0.6
+  image_picker: ^1.0.0
   lottie: ^2.3.1
   material_design_icons_flutter: ^6.0.7096
   table_calendar: ^3.0.8

@@ -57,14 +57,12 @@ class _pagina_bookingState extends State<pagina_booking> {
   void _marcarConsulta(bool dateSelected, bool timeSelected) {
     if (_dateSelected) {
       final DateTime dateSelected = _focusday;
-      // Create an instance of Firestore
+
       final FirebaseFirestore firestore = FirebaseFirestore.instance;
 
-      // Create a reference to the 'consultas' collection
       final CollectionReference consultasRef =
           firestore.collection('consultas');
 
-      // Add a new document with the selected data
       consultasRef.add({
         'mediador': nome,
         'data': dateSelected.toString(),
